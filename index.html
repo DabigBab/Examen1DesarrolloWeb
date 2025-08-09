@@ -2,17 +2,33 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Iniciar Sesión</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Inicio de Sesión</title>
+
+    <!-- Hoja de estilos dinámica -->
+    <link id="hojaEstilo" rel="stylesheet" href="">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Iniciar Sesión</h2>
-        <form>
-            <label for="usuario">Usuario</label>
-            <input type="text" id="usuario" name="usuario" required>
-            <label for="contrasena">Contraseña</label>
-            <input type="password" id="contrasena" name="contrasena" required>
-            <button type="submit">Entrar</button>
-        </form>
-    </div>
+    <h1>Formulario de Inicio de Sesión</h1>
+
+    <label for="tema">Seleccionar estilo:</label>
+    <select id="tema" onchange="cambiarEstilo()">
+        <option value="ninguno">Sin estilos</option>
+        <option value="estilo1.css">Estilo 1</option>
+        <option value="estilo2.css">Estilo 2</option>
+    </select>
+
+    <form id="loginForm">
+        <div>
+            <label>Usuario:</label><br>
+            <input type="text" id="usuario" placeholder="Ingrese su usuario" required>
+        </div>
+        <div>
+            <label>Contraseña:</label><br>
+            <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+        </div>
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
