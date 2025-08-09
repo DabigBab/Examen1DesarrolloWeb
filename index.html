@@ -6,6 +6,24 @@
 
     <!-- Hoja de estilos dinámica -->
     <link id="hojaEstilo" rel="stylesheet" href="">
+    <style>
+        /* Estilo común para la imagen QR */
+        #qrImagen {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            width: 70px; /* 🔹 Tamaño reducido */
+            height: auto;
+            cursor: pointer;
+            opacity: 0.8;
+            transition: transform 0.3s, opacity 0.3s;
+            z-index: 1000;
+        }
+        #qrImagen:hover {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <h1>Formulario de Inicio de Sesión</h1>
