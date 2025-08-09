@@ -25,3 +25,20 @@ button {
     background-color: #ff9800;
     color: white;
 }
+/* Imagen QR fija */
+#qrImagen {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.3s, opacity 0.3s;
+    z-index: 1000;
+}
+
+#qrImagen:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
